@@ -1,2 +1,42 @@
-.terraform*
-.DS_Store*
+# Ignore Terraform files
+.terraform/
+
+# Ignore .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Ignore override files as they're usually used to override resources locally and don't need to be committed
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore any crash log files that may be generated
+crash.log
+
+# Ignore files containing credentials
+*.pem
+*.ppk
+*.key
+
+# Ignore AWS credential files
+*.aws
+
+# Ignore .git folder if created by Terraform
+.git/
+
+# Ignore any backup files
+*.bak
+*.backup
+*.bak1
+*.bak2
+
+# Ignore temporary files
+*.tmp
+*.swp
+*~
+
